@@ -50,6 +50,7 @@ class Main
         /* 
          * Task 3. Add 1 to each element in ar1.  Print it out below
          */
+        System.out.println("Task 3");
         for (int i=0; i<ar1.length; i++)
             ar1[i]=i+1;
         for (int i=0; i<ar1.length; i++)
@@ -62,14 +63,15 @@ class Main
          *         Copy the elements of ar1 into ar3.  Then do it again
          *         For example
          *         ar1: 1 2 3
-         *         ar3: 1 2 3 0 1 2 3
+         *         ar3: 1 2 3 1 2 3
          */
         int [] ar3;
-        ar3 = new int [n];
+        ar3 = new int [ar1.length * 2];
+        System.out.println("Task 4");
         for (int i=0; i<ar1.length; i++)
             System.out.println("ar["+i+"] = "+ar1[i] );
         for (int i=0; i<ar1.length; i++)
-            ar3[i]=i;
+            ar3[i]=ar1[i];
         for (int i=0; i<ar1.length; i++)
             System.out.println("ar["+i+"] = "+ar3[i] );
         /*
