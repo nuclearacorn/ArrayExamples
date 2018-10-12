@@ -78,7 +78,16 @@ class Main
          * Task 5.  Switch the first and last element of ar1.
          *          print out the new ar1.  Then switch them back
          */
+        int value;
         
+        value = ar1[0];
+        
+        for (int i=0 ; i<ar1.length ; i++)
+            System.out.println("ar1[" + i + "] = "+ar1[i]);
+            
+        value  = ar1[0];
+        ar1[0] = ar1[ar1.length-1];
+        ar1[ar1.length-1] = value;
         /*
          * Task 6A. Print the 2nd to (n-1)th elements of ar1
          * Task 6B: Print out just the odd numbers in ar1
@@ -86,6 +95,17 @@ class Main
          *          the indices are multiples of 3
          *         
          */
+        for (int i=1; i <ar1.length-1 ; i++)
+            System.out.println(ar1[i]);
+            
+        for (int i=0; i<ar1.length; i++)
+            if (ar1[i] % 2 ==1)
+            System.out.println(ar1[i]);
+            
+        for (int i=0; i<ar1.length; i++)
+            if (ar1[i] % 3 ==0)
+            System.out.println(ar1[i]);
+            
         
         /*
          * Task 7.  For each element in ar1, 
@@ -98,7 +118,11 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
-        
+        for (int i=0; i<ar1.length; i++)
+            if (ar1[i] % 2 ==0)
+            System.out.println(ar1[i]);
+            else
+            System.out.println(ar1[i]);
          /*
           * Task 8
           *    Create an array called ar2odds
