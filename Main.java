@@ -196,14 +196,17 @@ class Main
          ar4[0]=temp10;
 
          System.out.println("New ar4");
-         for (int i=0 ; i<ar4.length ; i++);
+         for (int i=0 ; i<ar4.length ; i++)
              System.out.println(ar4[i]);
             
         
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
+        for (int i=0; i<ar2.length; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
         
+            int 
         
         /*
          * Task 12: 
