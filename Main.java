@@ -257,7 +257,7 @@ class Main
                     count5++;
             }
             
-        System.out.println(" TASK 12: is " + count5;
+        System.out.println(" TASK 12: is " + count5);
             
           
             
@@ -282,7 +282,31 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
-        String [] 
+        String[] monsterArray={ "Cookie",  "Grover",  "Oscar the Grouch" , "Elmo", "Rosita"}; 
+        
+        for (int i=0; i<monsterArray.length; i++)
+            System.out.println(" ["+i+"] " + monsterArray[i]);
+            
+        for (int i=0; i<monsterArray.length; i++)
+        
+            char c = monsterArray[i].toLowerCase().charAt(0);
+            
+            if (i == "a")
+            System.out.println(i);
+            
+            else if (i == "e")
+            System.out.println(i);
+            
+            else if (i == "i")
+            System.out.println(i);
+            
+            else if (i == "o")
+            System.out.println(i);
+            
+            else if (i == "u")
+            System.out.println(i);
+           
+        
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
@@ -298,7 +322,20 @@ class Main
           *      So arindex[0]=2
           *         arindex[1]=5
           */
+         int [] arx = new int [n14];
+         int start = 3;
+         int end = 94;
+         int n14 = end - start + 1;
          
+         int count14index= 0;
+         
+         for (i=0; i<n14; i++)
+            arx[i]= start + i;
+            
+            if (arx[i]%3 == 0)
+                count14index++;
+                
+        
          /*
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
